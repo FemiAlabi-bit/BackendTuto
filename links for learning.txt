@@ -1,0 +1,35 @@
+
+https://www.bing.com/videos/search?q=learn+github+for+beginners&&view=detail&mid=425F6EB624082271B86C425F6EB624082271B86C&FORM=VRDGAR ( GitHub) 57.22 timestamp
+
+
+1...
+ - https://www.youtube.com/watch?v=LzOtbUw6f_o     (A Beginner's Guide to REST APIs ")
+ - https://www.youtube.com/watch?v=ojObljINkY0     (Localhost, Port, Host & Server Explained for Beginners | Web Basics)
+ - https://www.youtube.com/watch?v=WXsD0ZgxjRw    (APIs for Beginners - How to use an API (Full Course / Tutorial)
+
+
+2.....https://www.youtube.com/watch?v=ERZadn9artM     (Complete REST API in Go )
+
+3.....https://www.youtube.com/watch?v=_L8j-ZC83y4  (Firebase)
+
+
+
+
+https://www.youtube.com/watch?v=yyUHQIec83I      (go tuto)
+
+
+
+
+https://levelupgo.dev/  (master go)
+
+https://www.bing.com/videos/riverview/relatedvideo?q=learn+PostgreSQL&&mid=D8A4F1579AD571ED748FD8A4F1579AD571ED748F&FORM=VRDGAR   ( postgresSQL)
+
+https://www.youtube.com/watch?v=_L8j-ZC83y4  (Firebase)
+
+
+https://www.bing.com/videos/riverview/relatedvideo?q=&mobile=0&mid=257B4DEC390CCF0C788F257B4DEC390CCF0C788F&FORM=M365C    (Complete Backend Engineering Course in Go)
+
+- good full video---https://www.youtube.com/watch?v=KOutPbKc9UM    (Intro to Backend Web Development – Node.js & Express Tutorial for Beginners)
+
+freeCodeCamp.org
+

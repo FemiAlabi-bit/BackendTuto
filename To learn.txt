@@ -1,0 +1,226 @@
+1. Backend fundamentals first
+Learn:
+
+what an API is
+request/response
+HTTP methods
+JSON responses
+middleware
+auth vs authorization
+database access
+environment variables
+
+This matters more than “Go syntax.”
+
+2. Go basics second
+Learn just enough Go to read backend code:
+
+main.go
+packages
+structs
+functions
+methods
+if err != nil
+pointers (lightly)
+context
+interfaces (later)
+
+You do not need advanced Go first.
+
+3. Web backend with Gin
+Since this project uses Gin:
+
+routes
+middleware
+c.JSON(...)
+c.Param(...)
+c.Get(...)
+
+This will make your code reading much easier.
+
+4. Firebase auth conceptually
+Just enough to understand:
+
+token
+Firebase user
+custom claims
+backend verification
+
+
+5. Postgres / ORM basics
+Understand:
+
+tables
+joins
+foreign keys
+preload / associations
+query filtering
+
+
+####################################################
+A practical self-learning roadmap for you
+Let me turn your idea into a realistic structure.
+
+Phase 1 — Backend fundamentals (Week 1)
+Goal:
+Understand the language of backend systems.
+Learn:
+
+What an API is
+Request vs response
+HTTP methods (GET, POST, PUT, DELETE)
+JSON response
+Middleware
+Auth vs authorization
+Environment variables
+
+Practice:
+Use your actual codebase:
+
+find GET routes
+find POST routes
+find where JSON is returned
+find where middleware is attached
+
+Success sign:
+You can explain:
+
+“What happens when the frontend asks the backend for companies?”
+
+
+Phase 2 — Go basics for reading code (Week 2)
+Goal:
+Become able to read Go without panic.
+Learn:
+
+package main
+func main()
+imports
+structs
+functions
+methods
+pointers lightly
+if err != nil
+context
+
+Practice:
+Use:
+
+dbservice/main.go
+claims-manager/main.go
+
+Success sign:
+You can explain:
+
+“This file starts the server / this file is a one-time tool / this function returns a handler.”
+
+
+Phase 3 — Gin web framework (Week 3)
+Goal:
+Understand the request lifecycle inside this backend.
+Learn:
+
+router
+route groups
+middleware
+gin.Context
+c.JSON(...)
+c.Param(...)
+c.Get(...)
+c.Next()
+c.Abort()
+
+Practice:
+Use:
+
+internal/execute/server.go
+internal/fetchroutes/company.go
+
+Success sign:
+You can explain:
+
+“This request enters here, passes auth middleware, then reaches this handler.”
+
+
+Phase 4 — Firebase auth conceptually (Week 4)
+Goal:
+Understand login and roles.
+Learn:
+
+token
+Firebase user
+custom claims
+backend verification
+difference between auth and authorization
+
+Practice:
+Use:
+
+internal/middleware/auth/firebase.go
+cmd/claims-manager/main.go
+
+Success sign:
+You can explain:
+
+“This is how isAdmin gets into the request context.”
+
+
+Phase 5 — Postgres / GORM basics (Week 5+)
+Goal:
+Understand where data comes from and how it is filtered.
+Learn:
+
+tables
+foreign keys
+joins
+preload / associations
+filtering queries
+
+Practice:
+Use:
+
+fetchroutes/company.go
+division.go
+schema files under pkg/db/schemas
+
+Success sign:
+You can explain:
+
+“This handler queries the database and filters results based on the logged-in person.”
+
+
+Your best learning style for this project
+Because you want practical experiment learning, I suggest this exact structure:
+
+For each concept, always do 4 things
+1. Read a short explanation
+not 3 hours of theory
+2. Find it in your codebase
+real example from the project
+3. Rewrite it in plain English
+example:
+
+“This middleware reads a token and stores email/admin info for later routes.”
+
+4. Test it mentally or locally
+If local run works, great.
+If not, simulate the request flow on paper.
+
+#################################################
+What you should NOT do
+Avoid these common traps:
+
+❌ Trap 1 — learning too much theory before touching code
+If you spend weeks only on generic backend theory, you’ll forget why you’re learning it.
+
+❌ Trap 2 — trying to understand the entire codebase at once
+That creates overwhelm.
+
+❌ Trap 3 — trying to “master Go” before understanding the backend
+You don’t need that yet.
+
+❌ Trap 4 — comparing yourself to the external developer
+That person likely built this over time with full context.
+You are onboarding from the outside.
+Different situation.
+#########################################################
